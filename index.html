@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>TechLearn - Educational Technology Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px 15px;
+            text-align: left;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+
+        nav {
+            background: #1e293b;
+            padding: 12px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            border-bottom: 2px solid #667eea;
+        }
+        nav a {
+            color: #a5f3fc;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #667eea;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 20px;
+            padding: 18px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .blog-post {
+            background: #1e293b;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .blog-post h2 {
+            margin-top: 0;
+            color: #a5f3fc;
+        }
+
+        .meta {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            margin-bottom: 10px;
+        }
+
+        .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin: 10px 0;
+        }
+
+        .tag {
+            background: #334155;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #a5f3fc;
+            border: 1px solid #667eea;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .sidebar-box {
+            background: #1e293b;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .sidebar-box h3 {
+            margin-top: 0;
+            color: #a5f3fc;
+        }
+
+        .sidebar-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-box li {
+            padding: 6px 0;
+            border-bottom: 1px solid #334155;
+        }
+
+        .sidebar-box a {
+            color: #a5f3fc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .sidebar-box a:hover {
+            color: #667eea;
+        }
+
+        .comments-section {
+            margin-top: 30px;
+            background: #1e293b;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+
+        .comment {
+            background: #0f172a;
+            padding: 12px;
+            margin: 10px 0;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+
+        .comment-author {
+            font-weight: bold;
+            color: #a5f3fc;
+            font-size: 0.9rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #334155;
+            border-radius: 4px;
+            font-family: inherit;
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 8px;
+            transition: transform 0.2s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-top: 20px;
+        }
+
+        @media(max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>TechLearn Blog</h1>
+    <p>Your source for technology education and insights</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#categories">Categories</a>
+    <a href="#popular">Popular</a>
+    <a href="#about">About</a>
+</nav>
+
+<main>
+    <section>
+        <!-- BLOG POST 1 -->
+        <div class="blog-post">
+            <h2>Introduction to Artificial Intelligence</h2>
+            <div class="meta">Posted on January 15, 2025 | By Sarah Tech</div>
+            <div class="tags">
+                <span class="tag">AI</span>
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Beginner</span>
+            </div>
+            <p>Artificial Intelligence is transforming the world around us. In this post, we explore the fundamentals of AI, from neural networks to deep learning...</p>
+            <a href="#" style="color: #007bff; font-weight: bold;">Read More →</a>
+        </div>
+
+        <!-- BLOG POST 2 -->
+        <div class="blog-post">
+            <h2>Web Development Best Practices in 2025</h2>
+            <div class="meta">Posted on January 10, 2025 | By John Developer</div>
+            <div class="tags">
+                <span class="tag">Web Dev</span>
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+            <p>Learn the latest best practices for modern web development. This guide covers responsive design, performance optimization, and accessibility standards...</p>
+            <a href="#" style="color: #007bff; font-weight: bold;">Read More →</a>
+        </div>
+
+        <!-- BLOG POST 3 -->
+        <div class="blog-post">
+            <h2>Cybersecurity Essentials for Everyone</h2>
+            <div class="meta">Posted on January 5, 2025 | By Emma Security</div>
+            <div class="tags">
+                <span class="tag">Security</span>
+                <span class="tag">Privacy</span>
+                <span class="tag">Tips</span>
+            </div>
+            <p>Security breaches are on the rise. Discover essential cybersecurity practices to protect your personal information online, from strong passwords to two-factor authentication...</p>
+            <a href="#" style="color: #007bff; font-weight: bold;">Read More →</a>
+        </div>
+
+        <!-- COMMENTS SECTION -->
+        <div class="comments-section">
+            <h3>Comments</h3>
+            <div class="comment">
+                <div class="comment-author">Alex | Jan 14, 2025</div>
+                <p>Great introduction to AI! Looking forward to more posts on this topic.</p>
+            </div>
+            <div class="comment">
+                <div class="comment-author">Maria | Jan 12, 2025</div>
+                <p>Very helpful. The examples were clear and easy to follow.</p>
+            </div>
+
+            <h4>Leave a Comment</h4>
+            <form onsubmit="alert('Comment posted!'); return false;">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your comment..." rows="4" required></textarea>
+                <button class="btn" type="submit">Post Comment</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-box">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#ai">AI & Machine Learning</a></li>
+                <li><a href="#web">Web Development</a></li>
+                <li><a href="#security">Cybersecurity</a></li>
+                <li><a href="#mobile">Mobile Apps</a></li>
+                <li><a href="#cloud">Cloud Computing</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-box">
+            <h3>Popular Tags</h3>
+            <div class="tags">
+                <span class="tag">AI</span>
+                <span class="tag">Web Dev</span>
+                <span class="tag">Security</span>
+                <span class="tag">JavaScript</span>
+            </div>
+        </div>
+
+        <div class="sidebar-box">
+            <h3>Recent Posts</h3>
+            <ul>
+                <li><a href="#">AI Fundamentals</a></li>
+                <li><a href="#">Web Best Practices</a></li>
+                <li><a href="#">Cybersecurity Tips</a></li>
+            </ul>
+        </div>
+    </aside>
+</main>
+
+<footer>
+    <p>TechLearn Blog • Educational Content • Contact: info@techlearn.com</p>
+    <p>© 2025 TechLearn. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
